@@ -1,0 +1,5 @@
+function binaryAgent(str) {
+    return str.split(" ").join("").replace(/[01]{8}/g, function(key){
+        return String.fromCharCode(parseInt(key,2));
+    });
+}
